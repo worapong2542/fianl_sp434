@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#39B5ED"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--    header-->
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/WebTood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="WebTood"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:id="@+id/Search_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:text="Button"
+            app:tint="@color/black"></ImageView>
+
+    </LinearLayout>
+    <!-- all content -->
+    <ScrollView
+        android:id="@+id/scr"
+        android:layout_width="wrap_content"
+        android:layout_height="625dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/Main_Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--    main content right scroll-->
+            <HorizontalScrollView
+                android:id="@+id/Horizontal_Scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/Horizontal_Main_Linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/Horizontal_Linear_img1"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Horizontal_img1"
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/testimg" />
+
+                        <GridLayout
+                            android:id="@+id/Horizontal_Linear_Grid1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="3"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/Horizontal_Namebook1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="XXXXX"></TextView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_urlimg1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="0dp"
+                                android:visibility="invisible"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgcoin1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_Price1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-80dp"
+                                android:text="000"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgfav1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-11dp"
+                                android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Horizontal_Linear_img2"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Horizontal_img2"
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/testimg" />
+
+                        <GridLayout
+                            android:id="@+id/Horizontal_Linear_Grid2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="3"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/Horizontal_Namebook2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="XXXXX"></TextView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_urlimg2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="0dp"
+                                android:visibility="invisible"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgcoin2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_Price2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-80dp"
+                                android:text="000"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgfav2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-11dp"
+                                android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Horizontal_Linear_img3"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Horizontal_img3"
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/testimg" />
+
+                        <GridLayout
+                            android:id="@+id/Horizontal_Linear_Grid3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="3"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/Horizontal_Namebook3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="XXXXX"></TextView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_urlimg3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="0dp"
+                                android:visibility="invisible"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgcoin3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_Price3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-80dp"
+                                android:text="000"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgfav3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-11dp"
+                                android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Horizontal_Linear_img4"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Horizontal_img4"
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/testimg" />
+
+                        <GridLayout
+                            android:id="@+id/Horizontal_Linear_Grid4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="3"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/Horizontal_Namebook4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="XXXXX"></TextView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_urlimg4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="0dp"
+                                android:visibility="invisible"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgcoin4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_Price4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-80dp"
+                                android:text="000"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgfav4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-11dp"
+                                android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Horizontal_Linear_img5"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Horizontal_img5"
+                            android:layout_width="130dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="-40dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/testimg" />
+
+                        <GridLayout
+                            android:id="@+id/Horizontal_Linear_Grid5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="3"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:id="@+id/Horizontal_Namebook5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="XXXXX"></TextView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_urlimg5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="0dp"
+                                android:visibility="invisible"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgcoin5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                            <TextView
+                                android:id="@+id/Horizontal_Price5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="-80dp"
+                                android:text="000"></TextView>
+
+                            <ImageView
+                                android:id="@+id/Horizontal_Imgfav5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-11dp"
+                                android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+                        </GridLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/Text_Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:text="CONTENT"
+                android:textSize="20dp"></TextView>
+
+            <LinearLayout
+                android:id="@+id/First_Content_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/FCL_Linear_1"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/FCL_Linear_1_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/FCL_Linear_1_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_1_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_1_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_1_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_1_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_1_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-11dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/FCL_Linear_2"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/FCL_Linear_2_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/FCL_Linear_2_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_2_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_2_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_2_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_2_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_2_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-11dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/FCL_Linear_3"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/FCL_Linear_3_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/FCL_Linear_3_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_3_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_3_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_3_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/FCL_Linear_3_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/FCL_Linear_3_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-11dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+                    </GridLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Second_Content_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/SCL_Linear_1"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/SCL_Linear_1_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/SCL_Linear_1_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_1_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_1_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_1_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_1_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_1_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-11dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SCL_Linear_2"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/SCL_Linear_2_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/SCL_Linear_2_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_2_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_2_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_2_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_2_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_2_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-18dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SCL_Linear_3"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/SCL_Linear_3_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/SCL_Linear_3_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_3_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_3_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_3_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/SCL_Linear_3_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/SCL_Linear_3_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-18dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Third_Content_Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/TCL_Linear_1"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TCL_Linear_1_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/TCL_Linear_1_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_1_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_1_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_1_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_1_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_1_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-18dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TCL_Linear_2"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TCL_Linear_2_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/TCL_Linear_2_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_2_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_2_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_2_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_2_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_2_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-18dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TCL_Linear_3"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/TCL_Linear_3_img"
+                        android:layout_width="130dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-40dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/testimg" />
+
+                    <GridLayout
+                        android:id="@+id/TCL_Linear_3_Grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_3_Namebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="WebTooD"></TextView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_3_urlimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="0dp"
+                            android:visibility="invisible"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_3_Imgcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/TCL_Linear_3_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="-80dp"
+                            android:text="000"></TextView>
+
+                        <ImageView
+                            android:id="@+id/TCL_Linear_3_Imgfav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-18dp"
+                            android:src="@drawable/ic_baseline_favorite_border_24"></ImageView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <GridLayout
+        android:id="@+id/Buttom_Grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="1">
+
+        <ImageView
+            android:id="@+id/Buttom_Grid_1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_home_24"
+            app:tint="@color/black"></ImageView>
+
+        <ImageView
+            android:id="@+id/Buttom_Grid_2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_library_books_24"
+            app:tint="@color/black"></ImageView>
+
+        <ImageView
+            android:id="@+id/Buttom_Grid_3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:tint="@color/black"></ImageView>
+
+        <ImageView
+            android:id="@+id/Buttom_Grid_4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:tint="@color/black"></ImageView>
+
+    </GridLayout>
+
+</LinearLayout>
